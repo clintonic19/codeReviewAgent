@@ -6,16 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev",
-    "build": "mastra build && node patch-sequence-matcher.js",
-    "start": "node .mastra/output/mastra.mjs"
+    "build": "mastra build",
+    "start": "mastra start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
- "engines": {
-  "node": "20.x"
-},
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "dependencies": {
     "@mastra/core": "^0.24.0",
     "@mastra/evals": "^0.14.3",
