@@ -16,11 +16,12 @@ export const mastra = new Mastra({
   agents: { weatherAgent, codeAgent },
   scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
   server: {apiRoutes: [a2aAgentRoute]},
-  config: ({
-    google: {
-      generativeAiApiKey: GOOGLE_GENERATIVE_AI_API_KEY || '',
-    },
-  } as any),
+  
+  // config: ({
+  //   google: {
+  //     generativeAiApiKey: GOOGLE_GENERATIVE_AI_API_KEY || '',
+  //   },
+  // } as any),
   
   storage: new LibSQLStore({
     // stores observability, scores, ... into memory storage, if it needs to persist, change to file:../mastra.db
