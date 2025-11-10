@@ -1,8 +1,5 @@
 import { registerApiRoute } from '@mastra/core/server';
 import { randomUUID } from 'crypto';
-// import { Router } from "express";
-
-// const router = Router();
 
 export const a2aAgentRoute = registerApiRoute('/a2a/agent/:agentId', {
   method: 'POST',
@@ -141,5 +138,3 @@ export const a2aAgentRoute = registerApiRoute('/a2a/agent/:agentId', {
     }
   }
 });
-
-// export default router;
