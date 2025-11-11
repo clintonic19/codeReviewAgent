@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev",
-    "build": "mastra build",
+    "build": "mastra build && node scripts/fix-sequencematcher.js",
     "start": "mastra start",
     "postinstall": "patch-package"
   },

@@ -99340,8 +99340,8 @@ Class Differ:
   };
 
   SequenceMatcher = (function() {
-//Commented by me
-    // SequenceMatcher.name = 'SequenceMatcher';
+
+    // SequenceMatcher.name assignment removed (patched)
 
     /*
       SequenceMatcher is a flexible class for comparing pairs of sequences of
