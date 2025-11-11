@@ -8,6 +8,7 @@ import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } 
 import 'dotenv/config';
 import { codeAgent } from './agents/code-agent';
 import { a2aAgentRoute } from './routes/a2a-routes';
+import ".../../../.mastra/.build/patches/fixSequenceMatcher.js"
 
 const GOOGLE_GENERATIVE_AI_API_KEY= process.env.GOOGLE_GENERATIVE_AI_API_KEY;
 
